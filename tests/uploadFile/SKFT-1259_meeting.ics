@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//My calendar product//mxm.dk//
+METHOD:PUBLISH
+BEGIN:VEVENT
+SUMMARY:Sr. Automation Tester - Interview for Sachin Datir
+DTSTART:20240306T103000Z
+DTEND:20240306T110000Z
+DTSTAMP:20240306T103000Z
+UID:75e563f8-402f-4f65-8f17-da319d953dfd
+ATTENDEE;CN=Sachin;ROLE=ATTENDEE:MAILTO:sdatir83@gmail.com
+DESCRIPTION:Your meeting place provider url is https://meetingplace.square
+ cruit.com?MPID=23164&atd_auth=gAAAAABl5YPGz5Ac2OyiaqQCylqbYc6oibpq9vT84_an
+ JJqkJ2-38iIWvaF4DbwbmpgYrHJYnFLMRc37AHOWgf4OwnCnOC1D49FWQO9I-PSH75PcuBVEzW
+ oPlcodtsPBNNnNaD7stXKP&source=twilio.\nJoin the meeting using the above ur
+ l. \nMeeting details: SKFT-1259 :SKFT-1259: Interview\nRequisition Title: 
+ Sr. Automation Tester \nStart Date Time: 2024-03-06 16:00:00+05:30\nEnd Da
+ te Time: 2024-03-06 16:30:00+05:30\nCandidate name: Sachin Datir\nYou can 
+ also join the meeting using following credentials\nMeeting provider url ht
+ tps://meetingplace.squarecruit.com\nMeeting Id: 23164\nEmail: sdatir83@gma
+ il.com \nPassword: 150464
+LOCATION:my desk
+ORGANIZER;CN="Puneet ";ROLE=HOST:MAILTO:puneetg@360logica.com
+PRIORITY:5
+STATUS:confirmed
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+TRIGGER;RELATED=START:-PT4H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

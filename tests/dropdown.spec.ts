@@ -12,7 +12,7 @@ test("Verify the Dynyamic Dropdown", async ({ page }) => {
   await page.locator("#src").fill("Pune");
   await page
     .locator('ul[class="sc-dnqmqq eFEVtU"]>li')
-    .filter({ hasText: "Swargate" })
+    .filter({ hasText: "Swargate"})
     .click();
   test.setTimeout(20000);
 
