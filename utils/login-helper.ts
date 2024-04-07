@@ -67,7 +67,7 @@ export class APiUtils
 
     }
 
-    async createOrder(orderPayLoad)
+    async createOrder(orderPayLoad:any)
     {
         let response:{token?:any,orderId?:any} = {};
        response.token = await this.getToken();

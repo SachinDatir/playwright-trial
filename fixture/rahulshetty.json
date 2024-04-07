@@ -1,0 +1,6 @@
+{
+    "selector":{
+        "orderButton":"button[routerlink*='myorders']",
+        "tBody":"tbody"
+    }
+}
