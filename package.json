@@ -13,8 +13,10 @@
     "allure-playwright": "^2.15.0"
   },
   "dependencies": {
+    "@cucumber/cucumber": "^10.4.0",
     "csv-parser": "^3.0.0",
     "moment": "^2.29.4",
+    "typescript": "^5.4.4",
     "xlsx": "^0.18.5"
   }
 }
