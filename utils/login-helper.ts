@@ -47,7 +47,7 @@ export class APiUtils
     apiContext: any;
     loginPayLoad: any;
 
-    constructor(apiContext,loginPayLoad)
+    constructor(apiContext:any,loginPayLoad:any)
     {
         this.apiContext =apiContext; 
         this.loginPayLoad = loginPayLoad;
