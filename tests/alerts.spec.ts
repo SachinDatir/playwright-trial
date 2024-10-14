@@ -17,7 +17,7 @@ test('js confirm alert',async({page})=>{
     await expect(simpleAlert.message()).toContain('I am a JS Confirm');
     await expect(simpleAlert.type()).toContain('confirm');
     await simpleAlert.accept();
-  });
+  }); 
   await page.locator('button[onclick="jsConfirm()"]').click()
   await expect(page.locator('#result')).toHaveText('You clicked: Ok')
   await page.waitForTimeout(5000)
