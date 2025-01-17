@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "types": ["node", "jest", "playwright"],
+      "module": "commonjs",
+      "target": "esnext",
+      "strict": true
+    }
+  }
+  

@@ -1,4 +1,5 @@
 import { test, expect, Locator } from '@playwright/test';
+import { link } from 'fs';
 test.describe(()=>{
   // test()
 })
@@ -47,4 +48,20 @@ for (let i = 0; i < dropdownListItems.length; i++) {
       }
     }
   }
+})
+
+
+test('validate the broken links',async({page})=>{
+  let arr = []
+  await page.goto('https://www.kesari.in/')
+let parentEL = await page.$$('menu')
+for(let i =0;i<parentEL.length;i++){
+  const links = await parentEL[i].$('a')
+  if(links){
+    const href = links.getAttribute('href')
+    if(await href){
+      arr.push(href)    
+    }
+  }
+}
 })
