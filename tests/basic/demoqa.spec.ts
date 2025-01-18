@@ -34,7 +34,7 @@ test("Validate the demoqa website new window", async ({ browser }) => {
   //   await page.pause();
   });
 
-  test.only("Validate the demoqa website new window message", async ({ browser }) => {
+  test("Validate the demoqa website new window message", async ({ browser }) => {
     let context = await browser.newContext();
     let page = await context.newPage();
     await page.goto("https://demoqa.com/buttons", { waitUntil: "load" });
@@ -50,3 +50,19 @@ test("Validate the demoqa website new window", async ({ browser }) => {
     expect(pageTitle).toContainText('Knowledge increases by sharing but not by saving. Please share this website with your friends and in your organization')
   //   await page.pause();
   });
+
+  test('Validate the removeAttr',async({page})=>{
+    await page.goto("https://demoqa.com/links", { waitUntil: "load" });
+    let samplelink = page.locator('#simpleLink')
+    await samplelink.evaluate((el)=>el.removeAttribute('target'))
+    await samplelink.click({force:true})
+    await page.locator('.banner-image').isVisible()
+  })
+
+  test.only('Validate the removeAttr',async({page})=>{
+    await page.goto("https://demoqa.com/slider", { waitUntil: "load" });
+    let samplelink = page.locator('[class="range-slider range-slider--primary"]')
+    await samplelink.evaluate((el)=>el)
+    await samplelink.click({force:true})
+    await page.locator('.banner-image').isVisible()
+  })

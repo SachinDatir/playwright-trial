@@ -38,7 +38,7 @@ export default defineConfig({
     {
       name: 'chromium', 
   
-      use: { ...devices['Desktop Chrome'],
+      use: { ...devices['Desktop Chrome HiDPI'],
         screenshot:'on',
         video:"retain-on-failure"
        },
