@@ -8,6 +8,6 @@ test('validate the keyboard functionality',async({page})=>{
     await page.keyboard.press('Control+C')
     await page.keyboard.down('Tab')
     await page.keyboard.press('Control+V')
-    expect(await page.locator('[name="text2"]')).toHaveText('I am learning Playwright')
+    expect(page.locator('[name="text2"]')).toHaveText('I am learning Playwright')
     await page.waitForTimeout(4000)
 })
