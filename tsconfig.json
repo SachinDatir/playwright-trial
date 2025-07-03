@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "types": ["node", "jest", "playwright"],
+      "types": ["node", "jest", "playwright","@types/node"],
       "module": "commonjs",
       "target": "esnext",
       "strict": true
